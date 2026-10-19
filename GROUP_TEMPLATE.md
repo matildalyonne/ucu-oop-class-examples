@@ -17,7 +17,7 @@ A five-person group completes five different extensions. A six-person group comp
 | Member 3 | | | | | |
 | Member 4 | | | | | |
 | Member 5 | | | | | |
-| Member 6 | | | | | |
+| Member 6 |B40767 | matildalyonne | 6| alveen-b40767| |
 
 ## Run our work
 
