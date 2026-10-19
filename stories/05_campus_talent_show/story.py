@@ -100,6 +100,14 @@ class TalentShow:
             return f"MC {self.mc} books {performance.name}."
         return f"No slot for {performance.name}. The timetable has entered the chat."
 
+    def cancel_last(self):
+        if not self._lineup:
+            return False
+        performance = self._lineup.pop()
+        minutes = performance.duration()
+        self.clock.remaining = self.clock.remaining + minutes
+        return True
+
 
 def audition(performances):  # Week 1's function, parameters, list, and loop.
     for performance in performances:
