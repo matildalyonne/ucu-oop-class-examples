@@ -14,7 +14,7 @@ A five-person group completes five different extensions. A six-person group comp
 |---|---|---|---|---|---|
 | Member 1 | | | | | |
 | Member 2 | | | | | |
-| Member 3 | | | | | |
+| Precious |B34990 | PreciousNekuse| 3|Precious-B34990| |
 | Member 4 | | | | | |
 | Member 5 | | | | | |
 | Member 6 | | | | | |
