@@ -106,6 +106,22 @@ class PicnicPlan:
             self._entries.append({"choice": choice, "cost": needed})
             return f"{self.student} completes {choice.name}: {needed:,} minutes."
         return f"Not enough minutes for {choice.name}. Nothing recorded."
+    
+    def complete_bundle(self, choices):
+        """Record every choice or none of them."""
+        if not choices:
+            return False
+        # Ask each choice once, so the quote we check is the quote we record.
+        costs = [choice.duration() for choice in choices]
+        if any(cost < 0 for cost in costs):
+            return False
+        total = sum(costs)
+        # clock.use() refuses 0, so a zero-cost bundle skips it (same as schedule()).
+        if total > 0 and not self.clock.use(total):
+            return False
+        for choice, cost in zip(choices, costs):
+            self._entries.append({"choice": choice, "cost": cost})
+        return True
 
 
 def show_choices(choices):
