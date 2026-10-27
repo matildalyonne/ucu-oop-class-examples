@@ -101,7 +101,7 @@ class PicnicPlan:
             "student": self.student,
             "remaining": self.clock.remaining,
             "completed_count": self.completed_count,
-            "choices": [entry["choice"] for entry in self._entries],
+            "choices": [entry["choice"].name for entry in self._entries],
         }
      # Read-only: it reflects actual history.
 
