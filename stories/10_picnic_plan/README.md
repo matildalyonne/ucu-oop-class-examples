@@ -63,7 +63,7 @@ classDiagram
     PicnicPlan *-- PicnicClock : owns
     PicnicPlan --> PicnicActivity : requests behaviour
     PicnicPlan --> GroupPhoto : matching methods
-```
+    
 
 A triangle points to a parent. A filled diamond means an owned component. A plain arrow means collaboration. The choices are created outside the coordinator and can exist independently; storing them in history is aggregation.
 

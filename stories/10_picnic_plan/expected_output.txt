@@ -20,3 +20,4 @@ PicnicActivity
 ABC
 object
 Ending: The group has enjoyed the picnic and can leave on time.
+
