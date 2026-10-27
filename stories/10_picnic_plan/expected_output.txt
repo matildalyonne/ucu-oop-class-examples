@@ -4,13 +4,15 @@ Nature walk needs 20 minutes.
 Team quiz needs 15 minutes.
 The picnic team is ready! Short nature walk needs 10 minutes.
 Group photo: 5 minutes in this classroom model.
+Team puzzle needs 12 minutes.
 Faith completes Short nature walk: 10 minutes.
 Faith completes Nature walk: 20 minutes.
 Not enough minutes for Nature walk. Nothing recorded.
 Faith completes Group photo: 5 minutes.
 Alex completes Team quiz: 15 minutes.
+Alex completes Team puzzle: 12 minutes.
 Faith: 5 minutes; completed: 3
-Alex: 25 minutes; completed: 1
+Alex: 13 minutes; completed: 2
 MRO (method lookup order):
 FeaturedWalk
 PicnicHype

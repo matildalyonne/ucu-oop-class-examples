@@ -57,6 +57,17 @@ class TeamQuiz(PicnicActivity):  # Siblings show hierarchical inheritance.
         return 15
 
 
+class TeamPuzzle(PicnicActivity):
+    def __init__(self, puzzles):
+        if not isinstance(puzzles, int) or isinstance(puzzles, bool) or puzzles <= 0:
+            raise ValueError("Puzzles must be a positive whole number.")
+        super().__init__("Team puzzle")
+        self.puzzles = puzzles
+
+    def duration(self):
+        return self.puzzles * 6
+
+
 class ShortWalk(NatureWalk):  # A third level in the same family.
     def __init__(self, stops=2):
         super().__init__(stops)
@@ -118,7 +129,7 @@ def main():
     print("=== THE MABIRA PICNIC PLAN ===")
     print("Faith is planning a fictional student picnic near Mabira. Activities must finish before the group leaves.")
     choices = [NatureWalk(), TeamQuiz("Team quiz"),
-               FeaturedWalk(), GroupPhoto()]
+               FeaturedWalk(), GroupPhoto(), TeamPuzzle(2)]
     show_choices(choices)  # Includes an unrelated duck-typed guest.
     session = PicnicPlan("Faith", 40)
     other = PicnicPlan("Alex", 40)
@@ -127,6 +138,7 @@ def main():
     print(session.schedule(choices[0]))  # Eventually the same request will not fit.
     print(session.schedule(choices[3]))
     print(other.schedule(choices[1]))
+    print(other.schedule(choices[4]))
     print(f"{session.student}: {session.clock.remaining:,} minutes; completed: {session.completed_count}")
     print(f"{other.student}: {other.clock.remaining:,} minutes; completed: {other.completed_count}")
     print("MRO (method lookup order):")

@@ -37,7 +37,7 @@ No extra packages are needed. The whole story prints without asking for input. C
 
 **Act 1: PicnicClock.** This object owns the remaining minutes. The property setter checks the starting value and later assignments. `use()` refuses an amount that does not fit before changing anything. A double underscore changes the internal attribute name; it is not a password lock.
 
-**Act 2: PicnicActivity.** This abstract class requires `duration()`. `NatureWalk` calculates a requirement from a quantity; `TeamQuiz` uses a fixed requirement. Each choice inherits its name and description interface. `super().__init__()` reuses common setup. Quantities must be positive whole numbers.
+**Act 2: PicnicActivity.** This abstract class requires `duration()`. `NatureWalk` and `TeamPuzzle` calculate a requirement from a positive whole-number quantity; `TeamQuiz` uses a fixed requirement. Each choice inherits its name and description interface. `super().__init__()` reuses common setup.
 
 **Act 3: specialised choices.** `ShortWalk` reuses its parent's calculation and adjusts it. `FeaturedWalk` combines this class with `PicnicHype`. The mixin adds a cheerful description. `GroupPhoto` has no shared parent but supplies the methods the caller needs. That is duck typing.
 
@@ -57,6 +57,7 @@ The quantities and units are deliberately simple. Integer division `//` rounds d
 classDiagram
     PicnicActivity <|-- NatureWalk
     PicnicActivity <|-- TeamQuiz
+    PicnicActivity <|-- TeamPuzzle
     NatureWalk <|-- ShortWalk
     ShortWalk <|-- FeaturedWalk
     PicnicHype <|-- FeaturedWalk
