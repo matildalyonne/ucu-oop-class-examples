@@ -86,6 +86,17 @@ class GroupPhoto:  # No shared parent: callers use its matching behaviour.
         return "Group photo: 5 minutes in this classroom model."
 
 
+class ThankYouCircle:
+    def __init__(self):
+        self.name = "Thank-you circle"
+
+    def duration(self):
+        return 0
+
+    def describe(self):
+        return f"{self.name}: a moment to thank everyone."
+
+
 # ACT 4: The coordinator HAS-A resource, and USES-A chosen object.
 class PicnicPlan:
     def __init__(self, student, amount):
@@ -133,6 +144,25 @@ def main():
     for parent in FeaturedWalk.__mro__:
         print(parent.__name__)
     print("Ending: The group has enjoyed the picnic and can leave on time.")
+
+    print("=== FOUNDATION 3: A GUEST FROM A DIFFERENT FAMILY ===")
+    guest = ThankYouCircle()
+    show_choices([guest])
+    zero_resource_session = PicnicPlan("Mulembeke", 0)
+    print(
+        f"Before: {zero_resource_session.clock.remaining} minutes; "
+        f"completed: {zero_resource_session.completed_count}"
+    )
+    print(zero_resource_session.schedule(guest))
+    print(
+        f"After guest: {zero_resource_session.clock.remaining} minutes; "
+        f"completed: {zero_resource_session.completed_count}"
+    )
+    print(zero_resource_session.schedule(GroupPhoto()))
+    print(
+        f"After refusal: {zero_resource_session.clock.remaining} minutes; "
+        f"completed: {zero_resource_session.completed_count}"
+    )
 
 
 if __name__ == "__main__":
