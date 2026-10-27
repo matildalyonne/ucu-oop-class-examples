@@ -95,7 +95,15 @@ class PicnicPlan:
 
     @property
     def completed_count(self):
-        return len(self._entries)  # Read-only: it reflects actual history.
+        return len(self._entries) 
+    def summary(self):
+        return {
+            "student": self.student,
+            "remaining": self.clock.remaining,
+            "completed_count": self.completed_count,
+            "choices": [entry["choice"] for entry in self._entries],
+        }
+     # Read-only: it reflects actual history.
 
     def schedule(self, choice):
         needed = choice.duration()  # Each choice knows its own calculation.
