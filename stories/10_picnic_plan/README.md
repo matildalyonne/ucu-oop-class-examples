@@ -43,7 +43,7 @@ No extra packages are needed. The whole story prints without asking for input. C
 
 **Act 4: PicnicPlan.** This coordinator creates and owns its `PicnicClock`. It receives an independent choice and asks for its requirement. If the resource approves, the coordinator records the success. The history is `_entries`, a list of dictionaries containing the choice object and the cost **at the time of success**. This saved cost will help with accurate cancellation later.
 
-**Act 5: the ending and Foundation 3 guest.** `main()` creates two separate coordinators. The first tries an ordinary choice, a special choice and a request that will not fit. The second has its own resource and history. The printed MRO shows the order Python uses to find methods. The final example shows `ThankYouCircle`, an unrelated duck-typed choice, completing with zero minutes while the session records one success and keeps a zero balance.
+**Act 5: the ending.** `main()` creates two separate coordinators. The first tries an ordinary choice, a special choice and a request that will not fit. The second has its own resource and history. The printed MRO shows the order Python uses to find methods.
 
 ## Follow one request
 
@@ -63,8 +63,7 @@ classDiagram
     PicnicPlan *-- PicnicClock : owns
     PicnicPlan --> PicnicActivity : requests behaviour
     PicnicPlan --> GroupPhoto : matching methods
-    PicnicPlan --> ThankYouCircle : matching methods
-```
+    
 
 A triangle points to a parent. A filled diamond means an owned component. A plain arrow means collaboration. The choices are created outside the coordinator and can exist independently; storing them in history is aggregation.
 
@@ -84,7 +83,7 @@ A triangle points to a parent. A filled diamond means an owned component. A plai
 | Multiple and hybrid inheritance | `FeaturedWalk(PicnicHype, ShortWalk)` |
 | Overriding and `super()` | Specialised requirement and added description |
 | Polymorphism | `show_choices()` calls the same method on different objects |
-| Duck typing | `GroupPhoto` and `ThankYouCircle` work without inheriting `PicnicActivity` |
+| Duck typing | `GroupPhoto` works without inheriting `PicnicActivity` |
 | MRO | The class list printed at the end; `super()` follows this order |
 | Abstraction | The caller uses `duration()` without copying its formula |
 | Composition | The coordinator creates its own resource |

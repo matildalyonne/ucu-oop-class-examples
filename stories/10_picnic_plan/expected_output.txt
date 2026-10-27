@@ -20,10 +20,4 @@ PicnicActivity
 ABC
 object
 Ending: The group has enjoyed the picnic and can leave on time.
-=== FOUNDATION 3: A GUEST FROM A DIFFERENT FAMILY ===
-Thank-you circle: a moment to thank everyone.
-Before: 0 minutes; completed: 0
-Mulembeke completes Thank-you circle: 0 minutes.
-After guest: 0 minutes; completed: 1
-Not enough minutes for Group photo. Nothing recorded.
-After refusal: 0 minutes; completed: 1
+
