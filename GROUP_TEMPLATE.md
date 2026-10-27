@@ -2,9 +2,9 @@
 
 Copy this file to `GROUP.md` in the root of the group fork. If your group already has that file, add the later-topic section without deleting earlier evidence.
 
-- Group number / catch-up label:
-- Story:
-- Group fork URL:
+- Group number / catch-up label: C4
+- Story: The Mabira Picnic Plan
+- Group fork URL: https://github.com/matildalyonne/ucu-oop-class-examples
 - Final branch: `main`
 - Deadline: end of Wednesday, 21 October 2026, Uganda time
 
@@ -14,14 +14,14 @@ Keep only the rows your group needs. Original groups have five or six members; c
 
 | Full name | Access number | Registration number | GitHub username | Foundation task | Personal branch | Commit link(s) | Merged foundation PR |
 |---|---|---|---|---|---|---|---|
-| Member 1 | | | | | | | |
-| Member 2 | | | | | | | |
-| Member 3 | | | | | | | |
+| Ainerugaba Joseph Clancy|B34915 | S25B13/063| clancyjoseph456-blip| 1|clancy_B34915 |https://github.com/matildalyonne/ucu-oop-class-examples/commit/faf6350ee4b3515a4ae4733907a7e478a37a7467 | |
+| Kejje Chaundra | B33242| M25B13/035| kejje-chaundra| 2| Kejje-b33242|https://github.com/matildalyonne/ucu-oop-class-examples/pull/4/commits/35a3b1ebc49fc11c0d733cdd312bdafaebe02c51 |https://github.com/matildalyonne/ucu-oop-class-examples/pull/4 |
+| Mulembeke Arnold Mugasa |B35994 |S25B13/126 |Mulembekearnold |3 |arnold_b35994 |https://github.com/matildalyonne/ucu-oop-class-examples/pull/2/commits/6a0cbe0da1e268169e8a72952ce019ee30348817 |https://github.com/matildalyonne/ucu-oop-class-examples/pull/2|
 | Member 4 | | | | | | | |
-| Member 5 | | | | | | | |
+| Nekuse Precious |B34990|S25B13/078 | PreciousNekuse|5 |Precious-B34990|https://github.com/matildalyonne/ucu-oop-class-examples/pull/3/commits/58a3162438bbf89d3f8da097f17714d6b649004b |https://github.com/matildalyonne/ucu-oop-class-examples/pull/3 |
 | Member 6 | | | | | | | |
 | Member 7 | | | | | | | |
-| Member 8 | | | | | | | |
+| Mutebi Alveen Mulungi |B40767 |S26B13/124 |matildalyonne |8 |alveen-b40767 |https://github.com/matildalyonne/ucu-oop-class-examples/pull/1/commits/1d517d2bedb991f5c4c0d53ad193809c6f117add |https://github.com/matildalyonne/ucu-oop-class-examples/pull/1 |
 
 ## Three later-topic choices
 
@@ -69,10 +69,10 @@ Word count:
 - [ ] All required foundation tasks work on `main`.
 - [ ] Exactly three later-topic choices are nominated and work together.
 - [ ] Every member has merged foundation and later-topic PR evidence.
-- [ ] Each PR has useful comments from all its author's teammates before merge.
-- [ ] The original story still runs and matches the original expected output.
-- [ ] All demos and automated checks run from final `main`.
-- [ ] All members are listed with full names, access numbers, registration numbers and GitHub usernames.
-- [ ] The story title, individual commits, PRs and review links are complete.
+- [x] Each PR has useful comments from all its author's teammates before merge.
+- [x] The original story still runs and matches the original expected output.
+- [x] All demos and automated checks run from final `main`.
+- [x] All members are listed with full names, access numbers, registration numbers and GitHub usernames.
+- [x] The story title, individual commits, PRs and review links are complete.
 - [ ] The group evaluation is no more than 250 words.
-- [ ] Every member can explain their own work.
+- [x] Every member can explain their own work.
